@@ -22,7 +22,11 @@
     <div class="row">
       <!--filtros-->
       <div class="col-xs-12 col-md-3">
-        <div class="Filtros-container">
+        <div class="list-group filtros-toggle">
+          <a href="#" id="filtrosToggle" class="list-group-item hidden-md hidden-lg" data-target="#filtros-container" data-toggle="collapse">
+          <h5 class="list-group-item-heading">Filtros</h5></a>
+        </div>
+        <div id="filtros-container" class="Filtros-container collapse hidden-md hidden-lg">
           <div class="list-group">
             <a class="list-group-item active">
               <h5 class="list-group-item-heading">Categorias</h5>
@@ -76,7 +80,60 @@
             </div>
           </div>
         </div>
-
+        <div  class="Filtros-container visible-md visible-lg">
+          <div class="list-group">
+            <a class="list-group-item active">
+              <h5 class="list-group-item-heading">Categorias</h5>
+            </a>
+            <a href="#" class="list-group-item">
+              Ropa <span class="badge">174</span>
+            </a>
+            <a href="#" class="list-group-item">
+              Tecnologia <span class="badge">155</span>
+            </a>
+            <a href="#" class="list-group-item">
+              Accesorios <span class="badge">130</span>
+            </a>
+          </div>
+          <div class="list-group">
+            <a class="list-group-item active">
+              <h5 class="list-group-item-heading">Color</h5>
+            </a>
+            <a href="#" class="list-group-item">
+              Verde
+            </a>
+            <a href="#" class="list-group-item">
+              Rojo
+            </a>
+            <a href="#" class="list-group-item">
+              Amarillo
+            </a>
+            <a href="#" class="list-group-item">
+              Azul
+            </a>
+          </div>
+          <div class="list-group">
+            <a class="list-group-item active">
+              <h5 class="list-group-item-heading">Genero</h5>
+            </a>
+            <div  class="list-group-item">
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="m">
+                    Masculino
+                </label>
+              </div>
+            </div>
+            <div  class="list-group-item">
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox"  value="f">
+                    Femenino
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <!--filtros-->
       <!--productos-->
@@ -111,6 +168,9 @@ productos
       </div>
     </div>
   </div>
+<!--/productos-->
+<!--caralogo-->
+
 </div>
 
 
